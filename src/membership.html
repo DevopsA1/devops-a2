@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership — ReaderHaven Library Passes &amp; Collector Vault</title>
+    <meta
+      name="description"
+      content="Compare ReaderHaven’s Reader, Patron, and Salon Fellow passes with CSS-only billing switching, Wing D collector shelf, and FAQ accordions."
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body class="page-membership">
+    <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <div class="library-atmosphere" aria-hidden="true">
+      <div class="bg-arch-colonnade"></div>
+      <div class="ambient-orb ambient-orb-top"></div>
+      <div class="ambient-orb ambient-orb-mid"></div>
+      <div class="astrolabe-ring"></div>
+      <div class="sunbeam-band sunbeam-1"></div>
+      <div class="sunbeam-band sunbeam-2"></div>
+      <div class="sunbeam-band sunbeam-3"></div>
+      <div class="ambient-lamp-corner"></div>
+      <div class="dust-motes">
+        <span class="dust-mote mote-1"></span>
+        <span class="dust-mote mote-2"></span>
+        <span class="dust-mote mote-3"></span>
+        <span class="dust-mote mote-4"></span>
+        <span class="dust-mote mote-5"></span>
+        <span class="dust-mote mote-6"></span>
+        <span class="dust-mote mote-7"></span>
+        <span class="dust-mote mote-8"></span>
+        <span class="dust-mote mote-9"></span>
+        <span class="dust-mote mote-10"></span>
+        <span class="dust-mote mote-11"></span>
+        <span class="dust-mote mote-12"></span>
+      </div>
+    </div>
+
+    <input
+      type="checkbox"
+      id="nav-drawer-toggle"
+      class="nav-drawer-toggle"
+      aria-label="Toggle navigation menu"
+    />
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+          <a href="collections.html" class="nav-link" data-page="collections">Collections</a>
+          <a href="services.html" class="nav-link" data-page="services">Services</a>
+          <a href="membership.html" class="nav-link" data-page="membership">Membership</a>
+          <a href="aboutus.html" class="nav-link" data-page="about">About Us</a>
+          <a href="contact.html" class="nav-link" data-page="contact">Contact Us</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="membership.html" class="btn btn-primary header-cta">Join Haven</a>
+          <label for="nav-drawer-toggle" class="drawer-trigger" aria-label="Open menu">
+            <span class="burger-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <label for="nav-drawer-toggle" class="drawer-backdrop" aria-hidden="true"></label>
+    <aside class="mobile-drawer" aria-label="Mobile navigation">
+      <div>
+        <div class="drawer-top">
+          <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+          <label for="nav-drawer-toggle" class="drawer-close" aria-label="Close menu">&times;</label>
+        </div>
+        <nav class="drawer-links" aria-label="Mobile links">
+          <a href="index.html" class="drawer-link" data-page="home">Home</a>
+          <a href="collections.html" class="drawer-link" data-page="collections">Collections</a>
+          <a href="services.html" class="drawer-link" data-page="services">Services</a>
+          <a href="membership.html" class="drawer-link" data-page="membership">Membership</a>
+          <a href="aboutus.html" class="drawer-link" data-page="about">About Us</a>
+          <a href="contact.html" class="drawer-link" data-page="contact">Contact Us</a>
+        </nav>
+      </div>
+      <div class="drawer-footer">
+        <a href="membership.html" class="btn btn-primary">Join the Sanctuary</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Librarians</a>
+      </div>
+    </aside>
+
+    <main>
+      <section class="page-header">
+        <div class="container page-header-grid">
+          <div>
+            <p class="eyebrow">Sanctuary Stewardship &amp; Passes</p>
+            <h1 class="display-title">Choose the rhythm of your reading year.</h1>
+          </div>
+          <div class="page-header-note">
+            <p>
+              Memberships fund independent archival curation and keep our salons free of advertising.
+              Switch between Annual Stewardship and Quarterly Circle billing below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <input type="radio" name="billing-cycle" id="billing-annual" class="billing-radio" checked />
+          <input type="radio" name="billing-cycle" id="billing-quarterly" class="billing-radio" />
+
+          <div class="billing-switch" role="group" aria-label="Billing cycle">
+            <label for="billing-annual" class="billing-option">Annual Stewardship (Save 18%)</label>
+            <label for="billing-quarterly" class="billing-option">Quarterly Circle</label>
+          </div>
+
+          <div class="tiers-grid">
+            <article class="tier-card">
+              <div>
+                <p class="tier-kicker">Tier 01 &middot; Digital &amp; Printables</p>
+                <h3>Reader</h3>
+                <p class="tier-price tabular-nums">
+                  <span class="price-annual">$9</span>
+                  <span class="price-quarterly">$12</span>
+                  <span class="tier-period">/ month</span>
+                </p>
+                <p class="tier-desc">
+                  For solitary readers seeking unlimited digital EPUB editions, book notes, and
+                  archival printable trackers.
+                </p>
+                <ul class="editorial-list" style="margin-top: 20px;">
+                  <li>Unlimited DRM-free EPUB &amp; warm PDF library downloads</li>
+                  <li>Full access to 36 printable margin folios &amp; bookplates</li>
+                  <li>Monthly librarian’s letter and all 148 catalog notes</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn btn-secondary">Select Reader Tier</a>
+            </article>
+
+            <article class="tier-card tier-card-featured">
+              <div>
+                <p class="tier-kicker">Tier 02 &middot; Most Popular Circle</p>
+                <h3>Patron</h3>
+                <p class="tier-price tabular-nums">
+                  <span class="price-annual">$24</span>
+                  <span class="price-quarterly">$29</span>
+                  <span class="tier-period">/ month</span>
+                </p>
+                <p class="tier-desc">
+                  Our signature library pass combining seasonal hardcover dispatches, full digital
+                  e-book access, and weekly moderated salons.
+                </p>
+                <ul class="editorial-list" style="margin-top: 20px;">
+                  <li>Everything in Reader, plus 4 linen-wrapped books yearly</li>
+                  <li>Instant e-reader EPUB copy alongside every print parcel</li>
+                  <li>Reserved seat in any weekly evening reading salon</li>
+                  <li>Solid brass bookmark on your first anniversary</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn btn-accent">Apply for Patron</a>
+            </article>
+
+            <article class="tier-card">
+              <div>
+                <p class="tier-kicker">Tier 03 &middot; Collector &amp; Host</p>
+                <h3>Salon Fellow</h3>
+                <p class="tier-price tabular-nums">
+                  <span class="price-annual">$48</span>
+                  <span class="price-quarterly">$58</span>
+                  <span class="tier-period">/ month</span>
+                </p>
+                <p class="tier-desc">
+                  Designed for collectors and neighborhood club hosts building a lasting home
+                  library and local circle.
+                </p>
+                <ul class="editorial-list" style="margin-top: 20px;">
+                  <li>Numbered clothbound collector editions each quarter</li>
+                  <li>Up to 10 printable host packets for your local book club</li>
+                  <li>Quarterly 1-on-1 curation desk hour with Elena Thorne</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn btn-secondary">Inquire as Fellow</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Wing D: Patron Collector Vault Shelf -->
+      <section class="section section-library-dark radiant-stage">
+        <div class="lamp-halo" aria-hidden="true"></div>
+        <div class="container" style="position: relative; z-index: 3;">
+          <div class="section-header" style="margin-bottom: 24px;">
+            <div>
+              <p class="eyebrow">Wing D &middot; Patron &amp; Collector Vault</p>
+              <h2 class="section-title">Seasonal parcel editions included inside Patron &amp; Fellow tiers</h2>
+            </div>
+            <a href="collections.html" class="btn btn-secondary">View All 12 Volumes</a>
+          </div>
+
+          <div class="bookshelf-cabinet">
+            <div class="shelf-brass-bar">
+              <span class="brass-plaque">COLLECTOR VAULT &middot; QUARTERLY PARCELS</span>
+              <span class="shelf-instruction">
+                Hover or focus any parcel spine to inspect the keepsake edition inside
+              </span>
+            </div>
+
+            <div class="bookshelf-row" aria-label="Membership Wing D collector vault shelf">
+              <a href="collections.html" class="shelf-spine spine-tall spine-crimson">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9781400031702-L.jpg" alt="Autumn Parcel: The Secret History" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Autumn Parcel 01</span>
+                </div>
+                <span class="spine-title">Autumn Parcel I</span>
+                <span class="spine-call">PATRON</span>
+              </a>
+              <a href="collections.html" class="shelf-spine spine-mid spine-navy">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9781635575637-L.jpg" alt="Winter Parcel: Piranesi" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Winter Parcel 02</span>
+                </div>
+                <span class="spine-title">Winter Parcel II</span>
+                <span class="spine-call">PATRON</span>
+              </a>
+              <a href="collections.html" class="shelf-spine spine-tall spine-forest">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9780316556347-L.jpg" alt="Spring Parcel: Circe" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Spring Parcel 03</span>
+                </div>
+                <span class="spine-title">Spring Parcel III</span>
+                <span class="spine-call">PATRON</span>
+              </a>
+              <a href="collections.html" class="shelf-spine spine-mid spine-plum">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9780143126393-L.jpg" alt="Solstice Keepsake: Shadow of the Wind" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Solstice Keepsake</span>
+                </div>
+                <span class="spine-title">Solstice Almanac</span>
+                <span class="spine-call">FELLOW</span>
+              </a>
+              <a href="collections.html" class="shelf-spine spine-tall spine-linen">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9780140268867-L.jpg" alt="Collector Odyssey Folio" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Collector Odyssey</span>
+                </div>
+                <span class="spine-title">Odyssey Folio</span>
+                <span class="spine-call">FELLOW</span>
+              </a>
+              <a href="collections.html" class="shelf-spine spine-short spine-ochre spine-lean">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg" alt="Pride and Prejudice Anniversary Keepsake" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Anniversary Edition</span>
+                </div>
+                <span class="spine-title">Anniversary Brass</span>
+                <span class="spine-call">GIFT</span>
+              </a>
+            </div>
+            <div class="bookshelf-plank" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-surface">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Frequently Asked</p>
+              <h2 class="section-title">Questions from prospective members</h2>
+            </div>
+            <span class="meta-line">Click any question to expand</span>
+          </div>
+
+          <div class="faq-list">
+            <details class="editorial-faq" open>
+              <summary>What happens if I already own the seasonal hardcover pick?</summary>
+              <div class="faq-answer">
+                <p>
+                  Two weeks before each quarterly parcel ships, Patrons and Salon Fellows receive
+                  a private preview card and may exchange the primary volume for any alternate
+                  selection from our 148-book archive at no extra cost.
+                </p>
+              </div>
+            </details>
+
+            <details class="editorial-faq">
+              <summary>Are the reading circles fast-paced or deadline-heavy?</summary>
+              <div class="faq-answer">
+                <p>
+                  Never. Each selection is paced over four to six unhurried weeks—roughly forty
+                  pages between gatherings. If you fall behind, you are always welcome to join
+                  simply to listen over tea.
+                </p>
+              </div>
+            </details>
+
+            <details class="editorial-faq">
+              <summary>How are the digital e-books and printable folios delivered?</summary>
+              <div class="faq-answer">
+                <p>
+                  Digital books are provided in clean DRM-free EPUB format compatible with all
+                  e-ink tablets, paired with ink-light PDF margin trackers for Letter and A4 paper.
+                </p>
+              </div>
+            </details>
+
+            <details class="editorial-faq">
+              <summary>Can I gift a ReaderHaven membership to a friend?</summary>
+              <div class="faq-answer">
+                <p>
+                  Yes. Reach out through our correspondence desk on the Contact Us page and our
+                  librarians will prepare a physical wax-sealed welcome letter or scheduled digital
+                  invitation for your recipient.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+            <p>
+              An editorial library sanctuary, book curation archive, and digital e-book community
+              for thoughtful readers everywhere.
+            </p>
+          </div>
+          <div>
+            <p class="footer-heading">Sanctuary</p>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Community</p>
+            <ul class="footer-links">
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="membership.html#faq">Member Questions</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Desk</p>
+            <ul class="footer-links">
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html#hours">Reading Room Hours</a></li>
+              <li><a href="collections.html#printables">E-Books &amp; Folios</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 ReaderHaven Literary Sanctuary. Pure HTML &amp; CSS Edition.</span>
+          <span class="meta-line">
+            <span>Folio XIV</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>Library &amp; Digital Press</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
