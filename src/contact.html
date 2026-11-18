@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — ReaderHaven Correspondence &amp; Reference Desk</title>
+    <meta
+      name="description"
+      content="Write to ReaderHaven’s librarians regarding membership inquiries, personal reading roadmaps, or consult Wing F’s reference desk shelf."
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body class="page-contact">
+    <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <div class="library-atmosphere" aria-hidden="true">
+      <div class="bg-arch-colonnade"></div>
+      <div class="ambient-orb ambient-orb-top"></div>
+      <div class="ambient-orb ambient-orb-mid"></div>
+      <div class="astrolabe-ring"></div>
+      <div class="sunbeam-band sunbeam-1"></div>
+      <div class="sunbeam-band sunbeam-2"></div>
+      <div class="sunbeam-band sunbeam-3"></div>
+      <div class="ambient-lamp-corner"></div>
+      <div class="dust-motes">
+        <span class="dust-mote mote-1"></span>
+        <span class="dust-mote mote-2"></span>
+        <span class="dust-mote mote-3"></span>
+        <span class="dust-mote mote-4"></span>
+        <span class="dust-mote mote-5"></span>
+        <span class="dust-mote mote-6"></span>
+        <span class="dust-mote mote-7"></span>
+        <span class="dust-mote mote-8"></span>
+        <span class="dust-mote mote-9"></span>
+        <span class="dust-mote mote-10"></span>
+        <span class="dust-mote mote-11"></span>
+        <span class="dust-mote mote-12"></span>
+      </div>
+    </div>
+
+    <input
+      type="checkbox"
+      id="nav-drawer-toggle"
+      class="nav-drawer-toggle"
+      aria-label="Toggle navigation menu"
+    />
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+          <a href="collections.html" class="nav-link" data-page="collections">Collections</a>
+          <a href="services.html" class="nav-link" data-page="services">Services</a>
+          <a href="membership.html" class="nav-link" data-page="membership">Membership</a>
+          <a href="aboutus.html" class="nav-link" data-page="about">About Us</a>
+          <a href="contact.html" class="nav-link" data-page="contact">Contact Us</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="membership.html" class="btn btn-primary header-cta">Join Haven</a>
+          <label for="nav-drawer-toggle" class="drawer-trigger" aria-label="Open menu">
+            <span class="burger-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <label for="nav-drawer-toggle" class="drawer-backdrop" aria-hidden="true"></label>
+    <aside class="mobile-drawer" aria-label="Mobile navigation">
+      <div>
+        <div class="drawer-top">
+          <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+          <label for="nav-drawer-toggle" class="drawer-close" aria-label="Close menu">&times;</label>
+        </div>
+        <nav class="drawer-links" aria-label="Mobile links">
+          <a href="index.html" class="drawer-link" data-page="home">Home</a>
+          <a href="collections.html" class="drawer-link" data-page="collections">Collections</a>
+          <a href="services.html" class="drawer-link" data-page="services">Services</a>
+          <a href="membership.html" class="drawer-link" data-page="membership">Membership</a>
+          <a href="aboutus.html" class="drawer-link" data-page="about">About Us</a>
+          <a href="contact.html" class="drawer-link" data-page="contact">Contact Us</a>
+        </nav>
+      </div>
+      <div class="drawer-footer">
+        <a href="membership.html" class="btn btn-primary">Join the Sanctuary</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Librarians</a>
+      </div>
+    </aside>
+
+    <main>
+      <section class="page-header">
+        <div class="container page-header-grid">
+          <div>
+            <p class="eyebrow">Correspondence &amp; Reference Desk</p>
+            <h1 class="display-title">Write to our librarians—we answer every letter personally.</h1>
+          </div>
+          <div class="page-header-note">
+            <p>
+              Whether you are requesting a bespoke reading roadmap, applying for a Patron parcel,
+              or asking about an out-of-print collection note, our desk responds within two working
+              days.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="form-panel" id="contact-form">
+            <div id="inquiry-sent" class="confirmation-banner" role="status">
+              <p class="confirmation-title">Correspondence Logged at the Desk</p>
+              <p>
+                Thank you for writing to ReaderHaven. Our editorial librarians have received your
+                inquiry details and will reply from the sanctuary desk within 48 hours.
+              </p>
+              <a href="#contact-form" class="btn btn-secondary">Send Another Note</a>
+            </div>
+
+            <form action="#inquiry-sent" method="get">
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="reader-name">Full Name</label>
+                  <input
+                    id="reader-name"
+                    name="name"
+                    type="text"
+                    class="field-control"
+                    placeholder="Clara Vance"
+                    minlength="2"
+                    required
+                  />
+                </div>
+
+                <div class="field-group">
+                  <label for="reader-email">Email Address</label>
+                  <input
+                    id="reader-email"
+                    name="email"
+                    type="email"
+                    class="field-control"
+                    placeholder="clara@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="inquiry-topic">Correspondence Topic</label>
+                  <select id="inquiry-topic" name="topic" class="field-control" required>
+                    <option value="">Select a sanctuary desk</option>
+                    <option value="membership">Membership &amp; Gift Invitations</option>
+                    <option value="roadmap">Personal Reading Roadmap</option>
+                    <option value="salons">Evening Salon &amp; Club Kit</option>
+                    <option value="archive">Collection &amp; Edition Notes</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="preferred-tier">Preferred Tier (Optional)</label>
+                  <select id="preferred-tier" name="tier" class="field-control">
+                    <option value="undecided">Still deciding</option>
+                    <option value="reader">Reader ($9 / mo)</option>
+                    <option value="patron">Patron ($24 / mo)</option>
+                    <option value="fellow">Salon Fellow ($48 / mo)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="reader-message">Your Note or Three Favorite Books</label>
+                <textarea
+                  id="reader-message"
+                  name="message"
+                  class="field-control"
+                  placeholder="Tell us what kind of reading season you are hoping to build..."
+                  minlength="12"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Deliver Correspondence</button>
+            </form>
+          </div>
+
+          <aside id="hours" class="correspondence-box" aria-label="Sanctuary desk hours">
+            <div class="info-block">
+              <p class="eyebrow">Reading Room Hours</p>
+              <h3>Quiet Reference &amp; Salon Desk</h3>
+              <p class="tabular-nums">Tuesday – Saturday &middot; 10:00 – 19:00</p>
+              <p>Sunday Afternoon Open Reading &middot; 13:00 – 17:00</p>
+            </div>
+
+            <div class="info-block">
+              <p class="eyebrow">Postal Sanctuary</p>
+              <h3>14 Bellwether Alley, Folio House</h3>
+              <p>Edinburgh &amp; Portland Editorial Desks</p>
+            </div>
+
+            <div class="info-block">
+              <p class="eyebrow">Direct Library Directory</p>
+              <h3>Internal Reading Pages</h3>
+              <p style="margin-bottom: 12px;">
+                Explore our seasonal shelves, services, or membership plans directly inside the site.
+              </p>
+              <div class="hero-actions">
+                <a href="collections.html" class="btn btn-secondary">Collections</a>
+                <a href="membership.html" class="btn btn-secondary">Membership</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Wing F: Reference Desk Quick-Lookup Shelf -->
+      <section class="section section-library-dark radiant-stage">
+        <div class="lamp-halo" aria-hidden="true"></div>
+        <div class="container" style="position: relative; z-index: 3;">
+          <div class="section-header" style="margin-bottom: 24px;">
+            <div>
+              <p class="eyebrow">Wing F &middot; Reference Desk Quick-Lookup Shelf</p>
+              <h2 class="section-title">Popular library requests kept right behind the librarian’s counter</h2>
+            </div>
+            <a href="collections.html" class="btn btn-secondary">Open Full 12-Book Catalog</a>
+          </div>
+
+          <div class="bookshelf-cabinet">
+            <div class="shelf-brass-bar">
+              <span class="brass-plaque">REFERENCE COUNTER &middot; MOST REQUESTED</span>
+              <span class="shelf-instruction">
+                Hover or focus any volume spine to view the cover before requesting it above
+              </span>
+            </div>
+
+            <div class="bookshelf-row" aria-label="Contact Wing F reference shelf">
+              <a href="collections.html" class="shelf-spine spine-tall spine-forest">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg" alt="Pride and Prejudice cover" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Pride &amp; Prejudice</span>
+                </div>
+                <span class="spine-title">Pride &amp; Prejudice</span>
+                <span class="spine-call">REF 01</span>
+              </a>
+              <a href="collections.html" class="shelf-spine spine-mid spine-crimson">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9781400031702-L.jpg" alt="The Secret History cover" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Secret History</span>
+                </div>
+                <span class="spine-title">Secret History</span>
+                <span class="spine-call">REF 02</span>
+              </a>
+              <a href="services.html" class="shelf-spine spine-tall spine-ochre">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9780140449334-L.jpg" alt="Meditations cover" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Meditations Kit</span>
+                </div>
+                <span class="spine-title">Meditations</span>
+                <span class="spine-call">REF 03</span>
+              </a>
+              <a href="membership.html" class="shelf-spine spine-mid spine-navy">
+                <div class="spine-photo-pop">
+                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_Kindle_3.JPG?width=900" alt="E-Reader EPUB Guide" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">E-Reader Guide</span>
+                </div>
+                <span class="spine-title">Digital E-Books</span>
+                <span class="spine-call">REF 04</span>
+              </a>
+              <a href="aboutus.html" class="shelf-spine spine-short spine-plum spine-lean">
+                <div class="spine-photo-pop">
+                  <img src="https://covers.openlibrary.org/b/isbn/9781635575637-L.jpg" alt="Piranesi cover" referrerpolicy="no-referrer" />
+                  <span class="spine-pop-caption">Piranesi Folio</span>
+                </div>
+                <span class="spine-title">Piranesi</span>
+                <span class="spine-call">REF 05</span>
+              </a>
+            </div>
+            <div class="bookshelf-plank" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+            <p>
+              An editorial library sanctuary, book curation archive, and digital e-book community
+              for thoughtful readers everywhere.
+            </p>
+          </div>
+          <div>
+            <p class="footer-heading">Sanctuary</p>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Community</p>
+            <ul class="footer-links">
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="membership.html#faq">Member Questions</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Desk</p>
+            <ul class="footer-links">
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html#hours">Reading Room Hours</a></li>
+              <li><a href="collections.html#printables">E-Books &amp; Folios</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 ReaderHaven Literary Sanctuary. Pure HTML &amp; CSS Edition.</span>
+          <span class="meta-line">
+            <span>Folio XIV</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>Library &amp; Digital Press</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
