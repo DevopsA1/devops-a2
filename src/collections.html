@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections — ReaderHaven 12-Volume Real Book &amp; E-Book Catalog</title>
+    <meta name="description"
+        content="Explore ReaderHaven’s 12-volume print and digital e-book catalog featuring real book covers, Dewey call numbers, CSS shelf filters, and interactive 3D Wing B stacks." />
+    <link rel="stylesheet" href="../style/style.css" />
+</head>
+
+<body class="page-collections">
+    <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <div class="library-atmosphere" aria-hidden="true">
+        <div class="bg-arch-colonnade"></div>
+        <div class="ambient-orb ambient-orb-top"></div>
+        <div class="ambient-orb ambient-orb-mid"></div>
+        <div class="astrolabe-ring"></div>
+        <div class="sunbeam-band sunbeam-1"></div>
+        <div class="sunbeam-band sunbeam-2"></div>
+        <div class="sunbeam-band sunbeam-3"></div>
+        <div class="ambient-lamp-corner"></div>
+        <div class="dust-motes">
+            <span class="dust-mote mote-1"></span>
+            <span class="dust-mote mote-2"></span>
+            <span class="dust-mote mote-3"></span>
+            <span class="dust-mote mote-4"></span>
+            <span class="dust-mote mote-5"></span>
+            <span class="dust-mote mote-6"></span>
+            <span class="dust-mote mote-7"></span>
+            <span class="dust-mote mote-8"></span>
+            <span class="dust-mote mote-9"></span>
+            <span class="dust-mote mote-10"></span>
+            <span class="dust-mote mote-11"></span>
+            <span class="dust-mote mote-12"></span>
+        </div>
+    </div>
+
+    <input type="checkbox" id="nav-drawer-toggle" class="nav-drawer-toggle" aria-label="Toggle navigation menu" />
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+
+            <nav class="primary-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="collections.html" class="nav-link" data-page="collections">Collections</a>
+                <a href="services.html" class="nav-link" data-page="services">Services</a>
+                <a href="membership.html" class="nav-link" data-page="membership">Membership</a>
+                <a href="aboutus.html" class="nav-link" data-page="about">About Us</a>
+                <a href="contact.html" class="nav-link" data-page="contact">Contact Us</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="membership.html" class="btn btn-primary header-cta">Join Haven</a>
+                <label for="nav-drawer-toggle" class="drawer-trigger" aria-label="Open menu">
+                    <span class="burger-lines" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <label for="nav-drawer-toggle" class="drawer-backdrop" aria-hidden="true"></label>
+    <aside class="mobile-drawer" aria-label="Mobile navigation">
+        <div>
+            <div class="drawer-top">
+                <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+                <label for="nav-drawer-toggle" class="drawer-close" aria-label="Close menu">&times;</label>
+            </div>
+            <nav class="drawer-links" aria-label="Mobile links">
+                <a href="index.html" class="drawer-link" data-page="home">Home</a>
+                <a href="collections.html" class="drawer-link" data-page="collections">Collections</a>
+                <a href="services.html" class="drawer-link" data-page="services">Services</a>
+                <a href="membership.html" class="drawer-link" data-page="membership">Membership</a>
+                <a href="aboutus.html" class="drawer-link" data-page="about">About Us</a>
+                <a href="contact.html" class="drawer-link" data-page="contact">Contact Us</a>
+            </nav>
+        </div>
+        <div class="drawer-footer">
+            <a href="membership.html" class="btn btn-primary">Join the Sanctuary</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Librarians</a>
+        </div>
+    </aside>
+
+    <main>
+        <section class="page-header">
+            <div class="container page-header-grid">
+                <div>
+                    <p class="eyebrow">Catalog Index &amp; Call-Number Shelves</p>
+                    <h1 class="display-title">Twelve curated editions with real covers &amp; warm EPUBs.</h1>
+                </div>
+                <div class="page-header-note">
+                    <p>
+                        Filter our 12-volume catalog by genre or digital e-book format below. Hover, focus, or
+                        select &ldquo;Turn Volume&rdquo; on any edition to read its call number and archivist notes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <input type="radio" name="shelf-filter" id="filter-all" class="filter-radio" checked />
+                <input type="radio" name="shelf-filter" id="filter-fiction" class="filter-radio" />
+                <input type="radio" name="shelf-filter" id="filter-essays" class="filter-radio" />
+                <input type="radio" name="shelf-filter" id="filter-speculative" class="filter-radio" />
+                <input type="radio" name="shelf-filter" id="filter-classics" class="filter-radio" />
+                <input type="radio" name="shelf-filter" id="filter-digital" class="filter-radio" />
+
+                <div class="filter-bar" role="group" aria-label="Filter library catalog by shelf">
+                    <label for="filter-all" class="filter-tab">All 12 Volumes</label>
+                    <label for="filter-fiction" class="filter-tab">Literary Fiction</label>
+                    <label for="filter-essays" class="filter-tab">Essays &amp; Philosophy</label>
+                    <label for="filter-speculative" class="filter-tab">Speculative &amp; Myth</label>
+                    <label for="filter-classics" class="filter-tab">Restored Classics</label>
+                    <label for="filter-digital" class="filter-tab">Digital E-Books</label>
+                </div>
+
+                <div class="book-grid collection-grid">
+                    <!-- 01 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="fiction digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-1" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9781400031702-L.jpg"
+                                                alt="The Secret History hardcover cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 813.54</span>
+                                        </div>
+                                        <h2 class="book-front-title">The Secret History</h2>
+                                        <p class="book-author">Donna Tartt</p>
+                                        <p class="book-format-note">Hardcover &middot; EPUB &middot; Folio PDF</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">559 Pages &middot; Fiction</span>
+                                        <label for="col-flip-1" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 813.54 &middot; Fiction</p>
+                                    <h3>The Secret History</h3>
+                                    <p class="book-back-synopsis">
+                                        Six Greek scholars at a snowy Vermont college follow an aesthetic ritual too
+                                        far, binding their circle in silence and confession.
+                                    </p>
+                                    <p class="book-back-note">Companion Guide: 18-page classical motifs index.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="services.html" class="book-back-link">Reading Companion</a>
+                                    <label for="col-flip-1" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 02 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="classics digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-2" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+                                                alt="Pride and Prejudice Penguin Classics cover"
+                                                referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 823.7</span>
+                                        </div>
+                                        <h2 class="book-front-title">Pride and Prejudice</h2>
+                                        <p class="book-author">Jane Austen</p>
+                                        <p class="book-format-note">Clothbound &middot; E-Reader Sync</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">432 Pages &middot; Classics</span>
+                                        <label for="col-flip-2" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 823.7 &middot; Classics</p>
+                                    <h3>Pride and Prejudice</h3>
+                                    <p class="book-back-synopsis">
+                                        Jane Austen’s sparkling comedy of manners, family pride, and quiet devotion
+                                        between Longbourn and Pemberley.
+                                    </p>
+                                    <p class="book-back-note">Discussion Focus: Epistolary Turning Points.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Join Salon Circle</a>
+                                    <label for="col-flip-2" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 03 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="speculative digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-3" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9781635575637-L.jpg"
+                                                alt="Piranesi by Susanna Clarke hardcover cover"
+                                                referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 823.92</span>
+                                        </div>
+                                        <h2 class="book-front-title">Piranesi</h2>
+                                        <p class="book-author">Susanna Clarke</p>
+                                        <p class="book-format-note">Hardcover &middot; EPUB &middot; Audio Folio</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">245 Pages &middot; Speculative</span>
+                                        <label for="col-flip-3" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 823.92 &middot; Speculative</p>
+                                    <h3>Piranesi</h3>
+                                    <p class="book-back-synopsis">
+                                        A solitary archivist logs the rising ocean tides inside an endless classical
+                                        house of statues until another footprint appears in the sand.
+                                    </p>
+                                    <p class="book-back-note">Includes 14 salon discussion questions.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Reserve Seat</a>
+                                    <label for="col-flip-3" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="essays digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-4" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780140449334-L.jpg"
+                                                alt="Meditations by Marcus Aurelius cover"
+                                                referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 188.01</span>
+                                        </div>
+                                        <h2 class="book-front-title">Meditations</h2>
+                                        <p class="book-author">Marcus Aurelius</p>
+                                        <p class="book-format-note">Restored Linen Print &middot; Archival PDF</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">256 Pages &middot; Philosophy</span>
+                                        <label for="col-flip-4" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 188.01 &middot; Philosophy</p>
+                                    <h3>Meditations</h3>
+                                    <p class="book-back-synopsis">
+                                        Twelve books of private philosophical notebooks written for self-reflection,
+                                        pairing classical stoicism with printable commonplace prompts.
+                                    </p>
+                                    <p class="book-back-note">Restored with wide annotation margins.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="services.html" class="book-back-link">Printable Templates</a>
+                                    <label for="col-flip-4" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 05 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="fiction digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-5" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780143126393-L.jpg"
+                                                alt="The Shadow of the Wind cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 863.64</span>
+                                        </div>
+                                        <h2 class="book-front-title">The Shadow of the Wind</h2>
+                                        <p class="book-author">Carlos Ruiz Zaf&oacute;n</p>
+                                        <p class="book-format-note">Clothbound &middot; Collector Jacket</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">487 Pages &middot; Translated</span>
+                                        <label for="col-flip-5" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 863.64 &middot; Fiction</p>
+                                    <h3>The Shadow of the Wind</h3>
+                                    <p class="book-back-synopsis">
+                                        Daniel Sempere discovers a cursed novel in Barcelona’s hidden Cemetery of
+                                        Forgotten Books and follows its author’s shadowed trail.
+                                    </p>
+                                    <p class="book-back-note">Includes Barcelona bookshop walking map.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="contact.html" class="book-back-link">Request Edition</a>
+                                    <label for="col-flip-5" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 06 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="speculative digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-6" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780316556347-L.jpg"
+                                                alt="Circe hardcover book cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 813.6</span>
+                                        </div>
+                                        <h2 class="book-front-title">Circe</h2>
+                                        <p class="book-author">Madeline Miller</p>
+                                        <p class="book-format-note">Collector Print &middot; Warm EPUB</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">393 Pages &middot; Mythic Fiction</span>
+                                        <label for="col-flip-6" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 813.6 &middot; Mythic</p>
+                                    <h3>Circe</h3>
+                                    <p class="book-back-synopsis">
+                                        A sweeping reimagining of Homer’s witch of Aiaia, tending botanical spells
+                                        and mortal visitors across centuries of exile.
+                                    </p>
+                                    <p class="book-back-note">Paired with botanical ex-libris bookplate.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Unlock Printables</a>
+                                    <label for="col-flip-6" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 07 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="classics digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-7" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780141441146-L.jpg"
+                                                alt="Jane Eyre Penguin Classics cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 823.8</span>
+                                        </div>
+                                        <h2 class="book-front-title">Jane Eyre</h2>
+                                        <p class="book-author">Charlotte Bront&euml;</p>
+                                        <p class="book-format-note">Restored Print &middot; Warm EPUB</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">532 Pages &middot; Restored 1847</span>
+                                        <label for="col-flip-7" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 823.8 &middot; Classics</p>
+                                    <h3>Jane Eyre</h3>
+                                    <p class="book-back-synopsis">
+                                        Bront&euml;’s fierce heroine navigates moorland isolation and Thornfield Hall’s
+                                        secrets with unwavering integrity.
+                                    </p>
+                                    <p class="book-back-note">Newly typeset for e-ink displays.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Download E-Book</a>
+                                    <label for="col-flip-7" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 08 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="speculative" tabindex="0">
+                        <input type="checkbox" id="col-flip-8" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780375753411-L.jpg"
+                                                alt="Frankenstein hardcover edition cover"
+                                                referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 823.72</span>
+                                        </div>
+                                        <h2 class="book-front-title">Frankenstein</h2>
+                                        <p class="book-author">Mary Shelley</p>
+                                        <p class="book-format-note">1818 Clothbound &middot; Folio Notes</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">280 Pages &middot; Gothic</span>
+                                        <label for="col-flip-8" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 823.72 &middot; Speculative</p>
+                                    <h3>Frankenstein</h3>
+                                    <p class="book-back-synopsis">
+                                        The foundational Gothic inquiry into ambition, loneliness, and responsibility
+                                        told through interlocking arctic letters.
+                                    </p>
+                                    <p class="book-back-note">Winner of the Autumn Salon Reader Choice.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="services.html" class="book-back-link">View Reading Map</a>
+                                    <label for="col-flip-8" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 09 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="speculative digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-9" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780452262935-L.jpg"
+                                                alt="Nineteen Eighty-Four by George Orwell cover"
+                                                referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 823.912</span>
+                                        </div>
+                                        <h2 class="book-front-title">Nineteen Eighty-Four</h2>
+                                        <p class="book-author">George Orwell</p>
+                                        <p class="book-format-note">EPUB &middot; E-Reader Typography Pack</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">328 Pages &middot; E-Book Ready</span>
+                                        <label for="col-flip-9" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 823.912 &middot; Speculative</p>
+                                    <h3>Nineteen Eighty-Four</h3>
+                                    <p class="book-back-synopsis">
+                                        Winston Smith’s cream-paper diary inside Airstrip One remains one of the
+                                        sharpest arguments ever written for historical truth and free thought.
+                                    </p>
+                                    <p class="book-back-note">Includes Newspeak essay appendix.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Get Digital Edition</a>
+                                    <label for="col-flip-9" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 10 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="fiction digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-10" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+                                                alt="The Great Gatsby hardcover cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 813.52</span>
+                                        </div>
+                                        <h2 class="book-front-title">The Great Gatsby</h2>
+                                        <p class="book-author">F. Scott Fitzgerald</p>
+                                        <p class="book-format-note">Hardcover &middot; EPUB &middot; Audio Notes</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">180 Pages &middot; 1925 Edition</span>
+                                        <label for="col-flip-10" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 813.52 &middot; Fiction</p>
+                                    <h3>The Great Gatsby</h3>
+                                    <p class="book-back-synopsis">
+                                        A concise, crystalline study of longing and illusion along the Long Island
+                                        shore, featuring the iconic library scene in West Egg.
+                                    </p>
+                                    <p class="book-back-note">Featured in Tuesday Evening Salon Circle.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Join Discussion</a>
+                                    <label for="col-flip-10" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 11 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="classics" tabindex="0">
+                        <input type="checkbox" id="col-flip-11" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780147514011-L.jpg"
+                                                alt="Little Women Puffin Classics cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 813.4</span>
+                                        </div>
+                                        <h2 class="book-front-title">Little Women</h2>
+                                        <p class="book-author">Louisa May Alcott</p>
+                                        <p class="book-format-note">Sewn Hardcover &middot; Facsimile</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">528 Pages &middot; Restored 1868</span>
+                                        <label for="col-flip-11" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 813.4 &middot; Classics</p>
+                                    <h3>Little Women</h3>
+                                    <p class="book-back-synopsis">
+                                        The March sisters’ attic theatricals, scribbled manuscripts, and enduring
+                                        warmth across Concord winters.
+                                    </p>
+                                    <p class="book-back-note">Includes Jo March’s reading list notes.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="contact.html" class="book-back-link">Inquire at Desk</a>
+                                    <label for="col-flip-11" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 12 -->
+                    <article class="book-flip-wrap scroll-reveal-card" data-category="essays digital" tabindex="0">
+                        <input type="checkbox" id="col-flip-12" class="flip-toggle" />
+                        <div class="book-flip-inner">
+                            <div class="book-face book-face-front">
+                                <div class="book-face-front-inner">
+                                    <div>
+                                        <div class="book-cover-photo-wrap">
+                                            <img src="https://covers.openlibrary.org/b/isbn/9780140268867-L.jpg"
+                                                alt="The Odyssey Robert Fagles cover" referrerpolicy="no-referrer" />
+                                            <span class="book-call-stamp">CALL 883.01</span>
+                                        </div>
+                                        <h2 class="book-front-title">The Odyssey</h2>
+                                        <p class="book-author">Homer (Trans. Fagles)</p>
+                                        <p class="book-format-note">Cloth Print &middot; EPUB Anthology</p>
+                                    </div>
+                                    <div class="book-front-footer">
+                                        <span class="meta-line tabular-nums">541 Pages &middot; Epic Verse</span>
+                                        <label for="col-flip-12" class="flip-hint-label">Turn Volume &rarr;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-face book-face-back">
+                                <div>
+                                    <p class="eyebrow">Call 883.01 &middot; Classics &amp; Notes</p>
+                                    <h3>The Odyssey</h3>
+                                    <p class="book-back-synopsis">
+                                        Epic verse paired with Bernard Knox’s scholarly introduction and synchronized
+                                        e-reader verse bookmarks.
+                                    </p>
+                                    <p class="book-back-note">Included free inside Patron &amp; Fellow tiers.</p>
+                                </div>
+                                <div class="book-back-actions">
+                                    <a href="membership.html" class="book-back-link">Claim Edition</a>
+                                    <label for="col-flip-12" class="flip-return-label">Return &larr;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wing B: Interactive Call-Number Library Shelf on Collections Page -->
+        <section class="section section-library-dark radiant-stage">
+            <div class="lamp-halo" aria-hidden="true"></div>
+            <div class="container" style="position: relative; z-index: 3;">
+                <div class="section-header" style="margin-bottom: 24px;">
+                    <div>
+                        <p class="eyebrow">Wing B &middot; Genre &amp; E-Book Stack</p>
+                        <h2 class="section-title">Quick-pull shelf across Fiction, Classics &amp; Digital Folios</h2>
+                    </div>
+                    <a href="membership.html" class="btn btn-secondary">Unlock Full Archive</a>
+                </div>
+
+                <div class="bookshelf-cabinet">
+                    <div class="shelf-brass-bar">
+                        <span class="brass-plaque">WING B &middot; CATALOG STACKS</span>
+                        <span class="shelf-instruction">
+                            Hover or focus any volume spine to inspect its real jacket photo
+                        </span>
+                    </div>
+
+                    <div class="bookshelf-row" aria-label="Collections Wing B bookshelf">
+                        <a href="collections.html" class="shelf-spine spine-tall spine-crimson">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9781400031702-L.jpg"
+                                    alt="The Secret History cover" referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">813.54 &middot; Fiction</span>
+                            </div>
+                            <span class="spine-title">Secret History</span>
+                            <span class="spine-call">813.5</span>
+                        </a>
+                        <a href="collections.html" class="shelf-spine spine-mid spine-forest">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+                                    alt="Pride and Prejudice cover" referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">823.7 &middot; Classics</span>
+                            </div>
+                            <span class="spine-title">Pride &amp; Prejudice</span>
+                            <span class="spine-call">823.7</span>
+                        </a>
+                        <a href="collections.html" class="shelf-spine spine-tall spine-navy">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9781635575637-L.jpg"
+                                    alt="Piranesi cover" referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">823.92 &middot; Speculative</span>
+                            </div>
+                            <span class="spine-title">Piranesi</span>
+                            <span class="spine-call">823.9</span>
+                        </a>
+                        <a href="collections.html" class="shelf-spine spine-short spine-ochre">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9780140449334-L.jpg"
+                                    alt="Meditations cover" referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">188.01 &middot; Philosophy</span>
+                            </div>
+                            <span class="spine-title">Meditations</span>
+                            <span class="spine-call">188.0</span>
+                        </a>
+                        <a href="collections.html" class="shelf-spine spine-mid spine-plum">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9780143126393-L.jpg"
+                                    alt="The Shadow of the Wind cover" referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">863.64 &middot; Translated</span>
+                            </div>
+                            <span class="spine-title">Shadow of Wind</span>
+                            <span class="spine-call">863.6</span>
+                        </a>
+                        <a href="collections.html" class="shelf-spine spine-tall spine-espresso">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9780316556347-L.jpg" alt="Circe cover"
+                                    referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">813.6 &middot; EPUB</span>
+                            </div>
+                            <span class="spine-title">Circe</span>
+                            <span class="spine-call">813.6</span>
+                        </a>
+                        <a href="collections.html" class="shelf-spine spine-mid spine-linen spine-lean">
+                            <div class="spine-photo-pop">
+                                <img src="https://covers.openlibrary.org/b/isbn/9780140449136-L.jpg"
+                                    alt="Crime and Punishment cover" referrerpolicy="no-referrer" />
+                                <span class="spine-pop-caption">891.73 &middot; Classics</span>
+                            </div>
+                            <span class="spine-title">Crime &amp; Punish.</span>
+                            <span class="spine-call">891.7</span>
+                        </a>
+                    </div>
+                    <div class="bookshelf-plank" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="printables" class="section section-surface">
+            <div class="container editorial-split">
+                <figure class="scroll-reveal-card">
+                    <div class="media-frame">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Old_books_in_library.jpg?width=1000"
+                            alt="Rows of historic leather-bound and clothbound library books on wooden shelves"
+                            referrerpolicy="no-referrer" />
+                    </div>
+                    <figcaption class="figure-caption">
+                        Fig. 2 &mdash; Archival clothbound and leather stacks indexed alongside our EPUB folios.
+                    </figcaption>
+                </figure>
+
+                <div>
+                    <p class="eyebrow">Card Catalog &amp; Digital Archive</p>
+                    <h2 class="section-title">Every physical shelf paired with DRM-free e-books &amp; folios</h2>
+                    <p class="lead-copy" style="margin-top: 14px;">
+                        Alongside stitched hardcovers, every ReaderHaven volume ships with warm-toned EPUB
+                        editions, printable ex-libris bookplates, and indexed commonplace note sheets.
+                    </p>
+                    <div class="hero-actions" style="margin-top: 24px;">
+                        <a href="services.html" class="btn btn-primary">Explore Library Services</a>
+                        <a href="membership.html" class="btn btn-secondary">Compare Passes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-wordmark">ReaderHaven</a>
+                    <p>
+                        An editorial library sanctuary, book curation archive, and digital e-book community
+                        for thoughtful readers everywhere.
+                    </p>
+                </div>
+                <div>
+                    <p class="footer-heading">Sanctuary</p>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-heading">Community</p>
+                    <ul class="footer-links">
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="membership.html#faq">Member Questions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-heading">Desk</p>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#hours">Reading Room Hours</a></li>
+                        <li><a href="collections.html#printables">E-Books &amp; Folios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 ReaderHaven Literary Sanctuary. Pure HTML &amp; CSS Edition.</span>
+                <span class="meta-line">
+                    <span>Folio XIV</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>Library &amp; Digital Press</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
