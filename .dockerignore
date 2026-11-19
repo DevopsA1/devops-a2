@@ -1,0 +1,8 @@
+.git*
+.parcel*
+dist
+node_modules
+.vscode
+.env
+.build
+
