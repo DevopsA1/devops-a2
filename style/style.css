@@ -2915,3 +2915,17 @@ textarea.field-control {
   .hero-ereader-mini { display: none; }
   .open-book-3d { width: 280px; height: 196px; }
 }
+
+/* Responsive design for mobile screens */
+
+@media (max-width: 600px) {
+    .contact-section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
